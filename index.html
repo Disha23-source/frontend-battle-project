@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Battle - Sustainability Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="mainContent" style="display:none;">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h1>Eco Dashboard</h1>
+      <ul>
+        <li><a href="#carbon">Carbon</a></li>
+        <li><a href="#energy">Energy</a></li>
+        <li><a href="#embodied">Embodied</a></li>
+        <li><a href="#brands">Brands</a></li>
+      </ul>
+      <button id="toggleMode">🌞</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Welcome to the Sustainability Dashboard</h2>
+      <p>Visualizing carbon and energy performance across years.</p>
+    </section>
+
+    <!-- Carbon Footprint Section -->
+    <section id="carbon" class="section">
+      <h2>Managed Portfolio Carbon Footprint</h2>
+      <div class="stats">
+        <div class="bar" data-value="45048">2022</div>
+        <div class="bar" data-value="14111">2021</div>
+        <div class="bar" data-value="32813">2020</div>
+        <div class="bar" data-value="38673">2019</div>
+      </div>
+    </section>
+
+    <!-- Energy Intensity Section -->
+    <section id="energy" class="section">
+      <h2>Energy Intensity & Consumption</h2>
+      <p>Energy Intensity: 123 kWh/m² (↓ 22% from 2019)</p>
+      <p>Consumption: 47,790,662 kWh (↓ 27% from 2019)</p>
+      <button onclick="alert('Downloading...')">Download the data</button>
+    </section>
+
+    <!-- Embodied Carbon Emissions Section -->
+    <section id="embodied" class="section">
+      <h2>Embodied Carbon Emissions</h2>
+      <div class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Refurbishment</button>
+        <button class="filter-btn">New Build</button>
+      </div>
+      <div class="graph-placeholder">[Graph Placeholder]</div>
+    </section>
+
+    <!-- Brand Kits Section -->
+    <section id="brands" class="section">
+      <h2>Brand Kits</h2>
+      <div class="brand-kits">
+        <div class="kit">ECorp</div>
+        <div class="kit">ICorp</div>
+        <div class="kit selected">The Agency</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Frontend Battle • Built with ❤️</p>
+      <p><em>AI tools used: ChatGPT (for code generation and planning)</em></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
